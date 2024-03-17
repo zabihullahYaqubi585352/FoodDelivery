@@ -1,0 +1,15 @@
+.total{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.action{
+    text-align: right;
+}
+
+.button{
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid red;
+}
