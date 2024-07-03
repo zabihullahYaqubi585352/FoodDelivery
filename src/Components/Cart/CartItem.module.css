@@ -1,0 +1,41 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid saddlebrown;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+.price {
+  color: orange;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.amount {
+  padding: 5px 10px;
+  border: 1px solid grey;
+  font-size: 20px;
+}
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.action button {
+  color: rgb(243, 113, 7);
+  padding: 0px 15px;
+  border: 1px solid rgb(241, 97, 14);
+  margin-right: 10px;
+  font-size: 25px;
+}
+.action button:hover {
+  background-color: rgb(179, 118, 83);
+}
