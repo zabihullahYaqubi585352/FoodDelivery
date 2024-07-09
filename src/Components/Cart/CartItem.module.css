@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 1px solid saddlebrown;
+  border-bottom: 2.5px solid saddlebrown;
 }
 .summary {
   display: flex;
@@ -13,7 +13,7 @@
   margin-bottom: 10px;
 }
 .price {
-  color: orange;
+  color: rgb(105, 51, 6);
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -30,9 +30,9 @@
   font-size: 20px;
 }
 .action button {
-  color: rgb(243, 113, 7);
+  color: rgb(121, 58, 7);
   padding: 0px 15px;
-  border: 1px solid rgb(241, 97, 14);
+  border: 1px solid rgb(121, 58, 7);
   margin-right: 10px;
   font-size: 25px;
 }
