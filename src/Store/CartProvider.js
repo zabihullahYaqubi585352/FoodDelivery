@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+ import { useReducer } from "react";
 import CartContext from "./cart-context";
 const defaultCartState = {
   items: [],
@@ -60,7 +60,7 @@ return{
 };
 const CartProvider = (props) => {
   const [cartState, dispatchCartAction] = useReducer(
-    cartReducer,
+    cartReducer, 
     defaultCartState
   );
   const addItemToCartHandler = (item) => {

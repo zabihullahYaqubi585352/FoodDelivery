@@ -4,6 +4,7 @@ import MealsItem from "./MealsItem/MealsItem";
 import { useEffect, useState } from "react";
 
 const AvailableMeals = (props) => {
+  const [IsLoding, setIsLoding] = useState(true);
   const [meals, setmeals] = useState([]);
   useEffect(() => {
     const fetchMeals = async () => {
@@ -13,6 +14,7 @@ const AvailableMeals = (props) => {
       const responseData = await response.json();
 
       const loadedMeals = [];
+     
 
       for (const key in responseData) {
         loadedMeals.push({
@@ -23,10 +25,21 @@ const AvailableMeals = (props) => {
         });
       }
       setmeals(loadedMeals);
+      setIsLoding(false);
     };
     fetchMeals();
   }, []);
 
+  
+  if (IsLoding) {
+    return(
+    <section className={classes.Loding}>
+      <p>
+        Loding...
+      </p>
+    </section>
+    );
+  }
   const mealsList = meals.map((meal) => (
     <MealsItem
       key={meal.id}
@@ -36,6 +49,8 @@ const AvailableMeals = (props) => {
       price={meal.price}
     />
   ));
+
+
   return (
     <section className={classes.meal}>
       <Card>
