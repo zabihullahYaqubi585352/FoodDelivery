@@ -39,6 +39,7 @@ const Cart = (props) => {
     );
     setissubmiting(false);
     setdidsubmite(true);
+    cartCtx.clearCart()
   };
 
   const CartItem = (
